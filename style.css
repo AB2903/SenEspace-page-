@@ -3,11 +3,11 @@ body {
 }
 
 header {
-  background: linear-gradient(to right, #42558B, #041D65);
+  background: linear-gradient(to right, #A6AEC8, #46588E, #041D65);
 }
 header nav {
   position: fixed;
-  background: linear-gradient(to right, #42558B, #041D65);
+  background: linear-gradient(to right, #A6AEC8, #46588E, #041D65);
   display: flex;
   justify-content: space-between;
   width: 100%;
