@@ -1,0 +1,126 @@
+header {
+  background: linear-gradient(to right, lightblue, rgb(79, 79, 160), rgb(19, 19, 123));
+}
+header nav {
+  background: linear-gradient(to right, lightblue, rgb(79, 79, 160), rgb(19, 19, 123));
+  display: flex;
+  justify-content: space-between;
+}
+header nav img {
+  width: 360px;
+  height: 150px;
+  padding-left: 100px;
+  padding-bottom: 25px;
+}
+header nav ul {
+  margin-top: 30px;
+  margin-right: 70px;
+  display: flex;
+}
+header nav ul li {
+  display: flex;
+  width: 105px;
+  height: 40px;
+}
+header nav ul li a {
+  color: #fff !important;
+}
+header nav ul li a:hover {
+  color: rgb(30, 0, 255) !important;
+}
+header nav ul #last {
+  border: 2px solid rgb(7, 7, 105);
+  border-radius: 35px;
+}
+header nav ul #last:hover {
+  color: #fff !important;
+  background-color: #007BFF;
+}
+header nav ul #last a {
+  color: #fff !important;
+  padding-top: -25px;
+  padding-left: 25px;
+}
+header nav ul #last a:hover {
+  color: #fff !important;
+}
+header section {
+  display: flex;
+  justify-content: space-around;
+}
+header section .div {
+  padding-left: 90px;
+  width: 6 0px;
+}
+header section .div h1 {
+  color: #fff;
+  font-size: 60px;
+}
+header section .div h4 {
+  color: #fff;
+  font-size: 25px;
+}
+header section .div h5 {
+  color: #fff;
+  font-size: 25px;
+}
+header section .div .btn {
+  border: 1px solid;
+  border-radius: 35px;
+  background-color: rgb(5, 5, 116);
+  width: 150px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+header section .div .btn:hover {
+  background-color: #007BFF;
+}
+header section .div .btn a {
+  text-decoration: none;
+  color: #fff;
+}
+header section .div .btn1 {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+header section .div .btn1 p {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  border: #333 solid 2px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 24px;
+}
+header section .div .btn1 a {
+  text-decoration: none;
+  color: #fff;
+}
+header section .image img {
+  width: 550px;
+  height: 500px;
+  padding-right: 50px;
+  padding-bottom: 35px;
+  animation: bounce 4s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  80% {
+    transform: translateY(-5px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

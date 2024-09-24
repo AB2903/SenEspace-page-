@@ -1,0 +1,200 @@
+header{
+    background: linear-gradient(to right, lightblue, rgb(79, 79, 160), rgb(19, 19, 123));
+    @mixin nav($theme: rgba(247, 242, 242, 0.934)){
+        background: linear-gradient(to right, lightblue, rgb(79, 79, 160), rgb(19, 19, 123));
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    @mixin img($theme: #fff){
+        width: 360px;
+        height: 150px;
+        padding-left: 100px;
+        padding-bottom: 25px;
+    }
+    
+    @mixin ul($theme: #fff){
+        margin-top: 30px;
+        margin-right: 70px;
+        display: flex;
+    }
+    
+    @mixin li($theme: #fff){
+        display: flex;
+        width: 105px;
+        height: 40px;
+    }
+    
+    @mixin lien($theme: #fff){
+        color: $theme !important;
+        &:hover{
+            color: rgb(30, 0, 255) !important;
+        }
+    }
+    
+    @mixin lien-dernier($theme: #fff){
+        color: $theme !important;
+        &:hover{
+            color: $theme !important;
+        }
+    }
+    
+    @mixin dernier($theme: #fff) {
+        border: 2px solid rgb(7, 7, 105);
+        border-radius: 35px;
+        &:hover{
+            color: #fff !important;
+            background-color: #007BFF;
+        }
+    }
+    
+    
+    nav{
+        @include nav;
+        img{
+            @include img;
+        }
+        ul{
+            @include ul;
+            li{
+                @include li;
+                a{
+                    @include lien;
+                }
+            }
+            #last{
+                @include dernier;
+                a{
+                    @include lien-dernier;
+                    padding-top: -25px;
+                    padding-left: 25px;
+                }
+            }
+        }
+    }
+
+    
+    @mixin section($theme: #fff){
+        display: flex;
+        justify-content: space-around;
+    }
+
+    @mixin pdiv($theme: #fff){
+        padding-left: 90px;
+        width: 6    00px;
+    }
+
+    @mixin h1($theme: #fff){
+        color: $theme;
+        font-size: 60px;
+    }
+
+    @mixin h4($theme: #fff){
+        color: $theme;
+        font-size: 25px;
+    }
+
+    @mixin h5($theme: #fff){
+        color: $theme;
+        font-size: 25px;
+    }
+
+    @mixin img($theme: #fff){
+        width: 550px;
+        height: 500px;
+        padding-right: 50px;
+        padding-bottom: 35px;
+        animation: bounce 4s infinite;
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            20% {
+                transform: translateY(-30px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            80% {
+                transform: translateY(-5px);
+            }
+        }
+    }
+
+    @mixin btn($theme: #007BFF){
+        border: 1px solid ;
+        border-radius: 35px;
+        background-color: rgb(5, 5, 116);                       
+        width: 150px;
+        &:hover{
+            background-color: $theme;
+        }
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+
+    @mixin link{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    @mixin btn1($theme: rgba(255, 255, 255, 0)){
+        background-color: $theme;
+        border: none;
+        font-size: 20px;
+        margin-left: 25px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+
+    @mixin icon{
+        display: inline-block;
+        width: 50px; 
+        height: 40px; 
+        border-radius: 50%;
+        border: #333 solid 2px;
+        background-color: #ffffff; 
+        color: #333;
+        font-size: 24px;
+    }
+
+    section{
+        @include section;
+        .div{
+            @include pdiv;
+            h1{
+                @include h1;
+            }
+            h4{
+                @include h4;    
+            }
+            h5{
+                @include h5;
+            }
+            .btn{
+                @include btn;
+                a{
+                    @include link;
+                }
+            }
+            .btn1{  
+                @include btn1;
+                p{
+                    @include icon;
+                }
+                a{
+                    @include link;
+                }
+            }
+        }
+        .image{
+            img{
+                @include img;
+            }
+        }
+    }
+}
+
+
+
