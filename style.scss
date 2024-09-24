@@ -1,16 +1,23 @@
+body{
+    margin: 0;
+}
 header{
     background: linear-gradient(to right, lightblue, rgb(79, 79, 160), rgb(19, 19, 123));
     @mixin nav($theme: rgba(247, 242, 242, 0.934)){
-        background: linear-gradient(to right, lightblue, rgb(79, 79, 160), rgb(19, 19, 123));
+        position: fixed;
+        background: linear-gradient(to right, rgba(173, 216, 230, 0.7), rgba(79, 79, 160, 0.7), rgba(19, 19, 123, 0.7));
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        z-index: 1000;
     }
     
     @mixin img($theme: #fff){
         width: 360px;
-        height: 150px;
+        height: 170px;
         padding-left: 100px;
-        padding-bottom: 25px;
+        padding-bottom: 70px;
     }
     
     @mixin ul($theme: #fff){
@@ -77,6 +84,7 @@ header{
     @mixin section($theme: #fff){
         display: flex;
         justify-content: space-around;
+        padding-top: 150px;
     }
 
     @mixin pdiv($theme: #fff){
