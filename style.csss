@@ -98,19 +98,12 @@ header section .div .btn1 {
 }
 header section .div .btn1 p {
   display: inline-block;
-  width: 40px;
-  height: 50px;
-  border: none;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  border: #fff solid 2px;
   color: #333;
   font-size: 24px;
-}
-header section .div .btn1 p i {
-  color: #fff;
-  width: 60px;
-  height: 60px;
-}
-header section .div .btn1 p i:hover {
-  color: blue;
 }
 header section .div .btn1 a {
   text-decoration: none;
@@ -138,4 +131,4 @@ header section .image img {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.csss.map */
