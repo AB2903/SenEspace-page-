@@ -141,16 +141,28 @@ header section .image img {
   }
 }
 
-
 #services {
   font-family: "Jost", sans-serif;
   color: #6c6b6b;
   background-color: #f3f5fa;
+  padding-bottom: 120px;
 }
 #services h1 {
   font-size: 35px;
   color: #37517e;
   font-weight: 700;
+}
+#services .tiret {
+  width: 100px;
+  border-bottom: 1px solid gray;
+  margin-left: 578px;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+#services .tiret .tiret-gras {
+  width: 40px;
+  border-bottom: 2px solid #37517e;
+  margin: 0 auto;
 }
 #services h4, #services .bi {
   color: #37517e;
@@ -161,10 +173,87 @@ header section .image img {
   margin-bottom: -90px;
 }
 
+#background-img {
+  background-image: url("IMAGES/cta-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll, scroll;
+  color: white;
+}
+#background-img .grandiant-linear {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #0060c7);
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#background-img .grandiant-linear .btn {
+  background-color: transparent;
+  border: 2px solid white;
+  width: 200px;
+  height: 50px;
+  color: white;
+}
+#background-img .grandiant-linear .btn:hover {
+  background-color: #041d65;
+  border: 2px solid #041d65;
+}
+#background-img .grandiant-linear p {
+  font-size: 18px;
+}
+
 #contact h1 {
   font-size: 35px;
   color: #37517e;
   font-weight: 700;
+}
+#contact .tiret {
+  width: 100px;
+  border-bottom: 1px solid gray;
+  margin-left: 578px;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+#contact .tiret .tiret-gras {
+  width: 40px;
+  border-bottom: 2px solid #37517e;
+  margin: 0 auto;
+}
+#contact .contact-data {
+  font-family: "Jost", sans-serif;
+  margin-top: 40px;
+}
+#contact .contact-data .c-data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#contact .contact-data .c-data .bi {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgb(231, 245, 251);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+#contact .contact-data .c-data p {
+  color: #6182ba;
+}
+#contact .contact-data .c-data p strong {
+  color: #37517e;
+  font-size: 20px;
+}
+#contact .btn {
+  background-color: #041d65;
+  height: 48px;
+  color: white;
+}
+#contact .btn:hover {
+  background-color: #0b42e8;
 }
 
 .newsletter {
@@ -196,6 +285,9 @@ header section .image img {
   color: white;
   position: absolute;
   left: 450px;
+}
+.newsletter form .btn:hover {
+  background-color: #0b42e8;
 }
 
 footer {
@@ -279,7 +371,7 @@ main .apropos .container .row .col .btn:hover {
   background-color: #152659;
 }
 main .proposition {
-  background: rgba(150, 153, 164, 0.2);
+  background-color: #f3f5fa;
 }
 main .proposition .row .col .contenu {
   margin-left: 100px;
@@ -304,7 +396,6 @@ main .proposition .row img {
   height: 430px;
   margin-top: 50px;
   margin-left: 50px;
-
 }
 
 /*# sourceMappingURL=style.css.map */

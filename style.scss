@@ -220,10 +220,23 @@ header{
     font-family: $font-family-page;
     color: #6c6b6b;
     background-color: #f3f5fa;
+    padding-bottom: 120px;
     h1{
         font-size: 35px;
         color: #37517e;
         font-weight: 700;
+    }
+    .tiret{
+        width: 100px;
+        border-bottom: 1px solid gray;
+        margin-left: 578px;
+        margin-top: -40px;
+        margin-bottom: 40px;
+        .tiret-gras{
+            width: 40px;
+            border-bottom: 2px solid #37517e;
+            margin: 0 auto;
+        }
     }
     h4, .bi{
         color: #37517e;
@@ -235,12 +248,91 @@ header{
     }
     
 }
+// section background-image
+#background-img{
+    background-image: url("IMAGES/cta-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll,scroll;
+    color: white;
+    .grandiant-linear{
+        background: linear-gradient(rgba(0, 0, 0, 0.1),#0060c7);
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn{
+            background-color: transparent; 
+            border: 2px solid white;
+            width: 200px; 
+            height: 50px; 
+            color: white;
+        }
+        .btn:hover{
+            background-color: #041d65; 
+            border: 2px solid #041d65;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
+
+
 // Section contact
 #contact{
     h1{
         font-size: 35px;
         color: #37517e;
         font-weight: 700;
+    }
+    .tiret{
+        width: 100px;
+        border-bottom: 1px solid gray;
+        margin-left: 578px;
+        margin-top: -40px;
+        margin-bottom: 40px;
+        .tiret-gras{
+            width: 40px;
+            border-bottom: 2px solid #37517e;
+            margin: 0 auto;
+        }
+    }
+    .contact-data{
+        font-family: $font-family-page;
+        margin-top: 40px;
+        .c-data{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            margin-left: 20px;
+            .bi{
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                background-color: rgb(231, 245, 251);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+            }
+            p{
+                color: #6182ba;
+                strong{
+                    color: #37517e;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .btn{
+        background-color: #041d65; 
+        height: 48px; 
+        color: white;
+    }
+    .btn:hover{
+        background-color: #0b42e8; 
     }
 }
 // Section Newsletter
@@ -272,6 +364,9 @@ header{
             color: white;
             position: absolute;
             left: 450px;
+        }
+        .btn:hover{
+            background-color: #0b42e8; 
         }
     }
     
@@ -396,7 +491,7 @@ main{
     }
 
     .proposition{
-        background: rgb(150, 153, 164, 0.2);
+        background-color: #f3f5fa;
         .row{
             .col{
                 .contenu{
