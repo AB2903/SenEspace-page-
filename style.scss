@@ -10,7 +10,7 @@ header{
     font-family: $font-family-page;
     @mixin nav($theme: rgba(247, 242, 242, 0.934)){
         position: fixed;
-        background: linear-gradient(to right,  #A6AEC8,#46588E, #041D65);
+        background: linear-gradient(to right,  rgb(166, 174, 200, 0.3),rgb(70, 88, 142, 0.3), rgb(4, 29, 101, 0.3));
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -164,7 +164,6 @@ header{
     @mixin icon{
         display: inline-block;
         width: 40px; 
-        height: 50px; 
         border: none;
         color: #333;
         font-size: 24px;
@@ -214,6 +213,7 @@ header{
         }
     }
 }
+
 
 // Section Services
 #services{
@@ -328,3 +328,105 @@ footer{
         }
     }
 }
+
+
+@mixin p{
+    border-bottom: 1px solid grey;
+    width: 100px;
+    margin: 0 auto;
+}
+@mixin p1{
+    border-bottom: 2px solid #152659;
+    width: 45px;
+    height: 10px;
+    margin: 0 auto;
+}
+
+@mixin btn{
+    border: 2px solid #152659;
+    color: #152659;
+    padding: 10px;
+    width: 150px;
+    &:hover{
+        color: #fff;
+        background-color: #152659;
+    }
+}
+
+@mixin imgs{
+    width: 550px;
+    height: 430px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+@mixin h($theme: #04478fde){
+    color: $theme;
+    font-size: 34px;
+}
+@mixin h2($theme: #0b3969de){
+    color: $theme;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+main{
+    .apropos{
+        .container{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            .row{
+                #titre{
+                    margin-bottom: 30px;
+                }
+                .col{
+                    h2{
+                        @include h2;
+                    }
+                    .p{
+                        @include p1;
+                    }.p1{
+                        @include p;
+                    }
+                    .btn{
+                        @include btn;
+                    }
+                }
+            }
+        }
+    }
+
+    .proposition{
+        background: rgb(150, 153, 164, 0.2);
+        .row{
+            .col{
+                .contenu{
+                    margin-left: 100px;
+                    margin-top: 70px;
+                    h6{
+                        @include h;
+                    }
+                    p{
+                        color: gray;
+                    }
+                    .accordion{
+                        .accordion-item{
+                            .accordion-header{
+                                .accordion-button{
+                                    background-color: transparent !important; 
+                                    border: none !important;   
+                                    &:focus{
+                                        box-shadow: none !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            img{
+                @include imgs;
+            }
+        }
+    }
+}
+

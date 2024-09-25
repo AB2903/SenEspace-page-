@@ -5,12 +5,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- Icons bootstrap -->
     <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- font-family -->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
       </style>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
     <title>SenEspace Website</title>
 </head>
 <body>
@@ -19,10 +23,10 @@
             <img src="./IMAGES/logo.png" class="img" alt="">
             <ul class="nav justify-content-end">
                 <li class="nav-item">    
-                  <a class="nav-link" href="#">Acceuil</a>
+                  <a class="nav-link" href="#acceuil">Acceuil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">A propos</a>
+                  <a class="nav-link" href="#apropos">A propos</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Service</a>
@@ -36,7 +40,7 @@
             </ul>
         </nav>
         
-        <section>
+        <section id="acceuil">
             <div class="div">
                 <h1>Achat et Vente de Maisons</h1>
                 <h4>Trouvez votre chez-vous idéal, vendez avec facilité! <br>Achetez et vendez des maisons en toute simplicité avec notre application!</h4>
@@ -53,6 +57,91 @@
         </section>
     </header>
     <main>
+      <section class="apropos" id="apropos">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center" id="titre">
+                    <h2>A propos de SenEspace</h2>
+                    <p class="p">
+                        <p class="p1"></p>
+                    </p>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col">
+                    <p>SenEspacene plateforme conviviale, localisée et complète qui connecte les acheteurs, les vendeurs et les locataires de biens immobiliers au Sénégal. Notre mission est de simplifier le processus de recherche immobilière, de promouvoir la transparence et d'autonomiser les utilisateurs pour prendre des décisions éclairées. SenEspace vise aussi à simplifier la recherche de biens immobiliers au Sénégal pour les senegalais de la diaspora.</p>
+                </div>
+                <div class="col">
+                    <p>À travers notre application mobile conviviale et notre site web, nous visons à offrir une expérience fluide pour les utilisateurs recherchant des solutions immobilières résidentielles et commerciales.</p>
+                    <button class="btn">Voir Plus</button>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col">
+                    <p >
+                        <i class="fas fa-check-double"></i>
+                        Adaptée au marché sénégalais
+                    </p>
+                    <p>
+                        <i class="fas fa-check-double"></i>
+                        Une large gamme d'annonces immobilières
+                    </p>
+                    <p>
+                        <i class="fas fa-check-double"></i>
+                        Fournir des informations détaillées sur la propriété
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="proposition">
+        <div class="row">
+            <div class="col">
+                <div class="contenu">
+                    <h6>Ce que <strong>SenEspace</strong> vous propose</h6>
+                    <p>faciliter l'achat, la vente et la location de biens immobiliers au Sénégal</p>
+
+                    <div class="accordion accordion-flush d-grid gap-3" id="accordionFlushExample">
+                        <div class="accordion-item p-2">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="font-size: 17px;">
+                                <strong style="color: rgb(4, 4, 128); margin-right: 10px;">01</strong>  Expertise Localisée
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Adaptée au marché sénégalais, offrant des informations immobilières localisées, un support linguistique et des considérations culturelles.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item p-2">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="font-size: 17px;">
+                                <strong style="color: rgb(4, 4, 128); margin-right: 10px;">02</strong>  Listings Complets
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Une large gamme d'annonces immobilières, y compris des maisons, des appartements, des terrains et des espaces commerciaux.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item p-2">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="font-size: 17px;">
+                                <strong style="color: rgb(4, 4, 128); margin-right: 10px;">03</strong>  Autonomisation de l'Utilisateur
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Fournir des informations détaillées sur la propriété pour permettre aux utilisateurs de prendre des décisions éclairées.</div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./IMAGES/why-us.png" alt="">
+            </div>
+        </div>
+    </section>
+
       <!-- Section services -->
         <section id="services">
             <h1 class="text-center mt-5 mb-5">SERVICES</h1>
@@ -134,8 +223,9 @@
               </div>
             </div>
           </div>
-         </section>
+        </section>
     </main>
+    <!--section footer -->
     <footer>
         <div class="container">
           <div class="row">
