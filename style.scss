@@ -1,8 +1,13 @@
+$font-family-page:"Jost", sans-serif;
 body{
     margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
 }
 header{
     background: linear-gradient(to right, #A6AEC8,#46588E, #041D65);
+    font-family: $font-family-page;
     @mixin nav($theme: rgba(247, 242, 242, 0.934)){
         position: fixed;
         background: linear-gradient(to right,  #A6AEC8,#46588E, #041D65);
@@ -210,5 +215,116 @@ header{
     }
 }
 
+// Section Services
+#services{
+    font-family: $font-family-page;
+    color: #6c6b6b;
+    background-color: #f3f5fa;
+    h1{
+        font-size: 35px;
+        color: #37517e;
+        font-weight: 700;
+    }
+    h4, .bi{
+        color: #37517e;
+        font-weight: 500;
+    }
+    .bi {
+        font-size: 2em;
+        margin-bottom: -90px;
+    }
+    
+}
+// Section contact
+#contact{
+    h1{
+        font-size: 35px;
+        color: #37517e;
+        font-weight: 700;
+    }
+}
+// Section Newsletter
+.newsletter{
+    background-color: #f3f5fa;
+    height: 250px;
+    padding-top: 45px;
+    margin-bottom: 80px;
+    font-family: $font-family-page;
+    h3{
+        color: #37517e;
+    }
+    form{
+        position: relative;
+        .inputNewsletter{
+            width: 450px;
+            height: 40px;
+            border: none;
+            border-radius: 50px;
+    
+            position: absolute;
+            left: 50px;
+            background-color: white;
+        }
+        .btn{
+            background-color: #041d65; 
+            width: 110px; 
+            height: 40px; 
+            color: white;
+            position: absolute;
+            left: 450px;
+        }
+    }
+    
+}
 
-
+// footer
+footer{
+    font-family: $font-family-page;
+    
+    color: #5e5e5e;
+    h3,h6{
+        color: #37517e;
+    }
+    .liens-utiles, .nos-services{
+        a{
+            text-decoration: none;
+            color: #5e5e5e;
+            font-size: 15px;
+            i{
+                color: black;
+                font-size: 10px;
+                margin-top: 20px;
+            }
+        }
+    }
+    .social-media{
+        display: flex;
+        gap: 10px;
+        .bi, .fa-brands{
+            background-color: #041D65;
+            color: white;
+            width:37px;
+            height:37px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bi:hover, .fa-brands:hover{
+            background-color: #3690ea;
+        }
+        
+    }
+    .footer-bande{
+        background-color: #43517e;
+        height: 80px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: #041D65;
+            text-decoration: none;
+        }
+    }
+}

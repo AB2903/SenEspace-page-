@@ -1,9 +1,13 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
 }
 
 header {
   background: linear-gradient(to right, #A6AEC8, #46588E, #041D65);
+  font-family: "Jost", sans-serif;
 }
 header nav {
   position: fixed;
@@ -136,6 +140,109 @@ header section .image img {
   80% {
     transform: translateY(-5px);
   }
+}
+
+#services {
+  font-family: "Jost", sans-serif;
+  color: #6c6b6b;
+  background-color: #f3f5fa;
+}
+#services h1 {
+  font-size: 35px;
+  color: #37517e;
+  font-weight: 700;
+}
+#services h4, #services .bi {
+  color: #37517e;
+  font-weight: 500;
+}
+#services .bi {
+  font-size: 2em;
+  margin-bottom: -90px;
+}
+
+#contact h1 {
+  font-size: 35px;
+  color: #37517e;
+  font-weight: 700;
+}
+
+.newsletter {
+  background-color: #f3f5fa;
+  height: 250px;
+  padding-top: 45px;
+  margin-bottom: 80px;
+  font-family: "Jost", sans-serif;
+}
+.newsletter h3 {
+  color: #37517e;
+}
+.newsletter form {
+  position: relative;
+}
+.newsletter form .inputNewsletter {
+  width: 450px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  left: 50px;
+  background-color: white;
+}
+.newsletter form .btn {
+  background-color: #041d65;
+  width: 110px;
+  height: 40px;
+  color: white;
+  position: absolute;
+  left: 450px;
+}
+
+footer {
+  font-family: "Jost", sans-serif;
+  color: #5e5e5e;
+}
+footer h3, footer h6 {
+  color: #37517e;
+}
+footer .liens-utiles a, footer .nos-services a {
+  text-decoration: none;
+  color: #5e5e5e;
+  font-size: 15px;
+}
+footer .liens-utiles a i, footer .nos-services a i {
+  color: black;
+  font-size: 10px;
+  margin-top: 20px;
+}
+footer .social-media {
+  display: flex;
+  gap: 10px;
+}
+footer .social-media .bi, footer .social-media .fa-brands {
+  background-color: #041D65;
+  color: white;
+  width: 37px;
+  height: 37px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-media .bi:hover, footer .social-media .fa-brands:hover {
+  background-color: #3690ea;
+}
+footer .footer-bande {
+  background-color: #43517e;
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-bande a {
+  color: #041D65;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

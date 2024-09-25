@@ -5,6 +5,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Icons bootstrap -->
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- font-family -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
     <title>SenEspace Website</title>
 </head>
 <body>
@@ -47,7 +53,138 @@
         </section>
     </header>
     <main>
-        
+      <!-- Section services -->
+        <section id="services">
+            <h1 class="text-center mt-5 mb-5">SERVICES</h1>
+            <p class="text-center fs-5">Nous mettons a votre disposition des informations immobilières localisées, un support linguistique   et des considérations culturelles.
+            </p>
+            <div class="container text-start mb-5 mt-5">
+                <div class="row gap-4">
+                  <div class="col shadow-lg px-4 py-5  bg-white mb-4">
+                    <i class="bi bi-dribbble"></i>
+                    <h4 class="mt-2">Maisons</h4>
+                    <p class="mt-4">Explorez une variété de maisons disponibles à la vente ou à la location, avec des détails complets sur leur emplacement, leur taille et leurs commodités pour vous aider à trouver votre chez-vous idéal au Sénégal.
+                    </p>
+                  </div>
+                  <div class="col shadow-lg px-4 py-5  bg-white mb-4">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <h4 class="mt-2">Appartements</h4>
+                    <p class="mt-4">Découvrez une sélection d'appartements à vendre ou à louer, avec des descriptions détaillées comprenant des informations sur les services à proximité, les commodités de l'immeuble et bien plus encore, pour vous aider à trouver le lieu de vie parfait au Sénégal.
+                    </p>
+                  </div>
+                  <div class="col shadow-lg px-4 py-5  bg-white mb-4">
+                    <i class="bi bi-stopwatch"></i>
+                    <h4 class="mt-2">Terrains</h4>
+                    <p class="mt-4">Parcourez notre liste de terrains à vendre, avec des détails sur la taille, le zonage et les possibilités de développement, pour vous aider à concrétiser vos projets immobiliers au Sénégal en toute transparence.
+                    </p>
+                  </div>
+                  <div class="col shadow-lg px-4 py-5  bg-white mb-4">
+                    <i class="bi bi-stack"></i>
+                    <h4 class="mt-2">Espaces<br> commerciaux</h4>
+                    <p class="mt-4">Explorez nos annonces d'espaces commerciaux à louer ou à vendre, avec des informations détaillées sur l'emplacement, la taille et les équipements disponibles, pour vous aider à trouver l'emplacement idéal pour votre entreprise au Sénégal.
+                    </p>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- Section contact -->
+        <section id="contact">
+          <h1 class="text-center mt-5 mb-5">CONTACT</h1>
+          <div class="container mb-5">
+            <div class="row gap-4">
+              <div class="col shadow-lg bg-tertiary" style="border-bottom: 3px solid #041d65; border-top: 3px solid #041d65;"></div>
+              <div class="col-7 shadow-lg px-4 py-5  bg-tertiary" style="border-bottom: 3px solid #041d65; border-top: 3px solid #041d65;">
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputName" class="form-label">Prenom & Nom</label>
+                    <input type="text" class="form-control" id="inputName">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Votre Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputOjet" class="form-label">Objet</label>
+                    <input type="text" class="form-control" id="inputOjet">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputMessage" class="form-label">Message</label>
+                    <textarea type="text" class="form-control " style="min-height: 230px;" id="inputMessage"></textarea>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center mt-5">
+                    <button type="submit" class="btn w-25 rounded-pill" style="background-color: #041d65; height: 48px; color: white;">Envoyer</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+        <!-- Section Newsletter -->
+         <section>
+          <div class="newsletter">
+            <div class="row text-center d-flex      justify-content-center">
+              <div class="col-6">
+                <h3><strong>Restez informé</strong></h3>
+              <p class="mt-4">Rejoignez notre newsletter pour etre informé de nos nouveauté </p>
+              <form class="mt-4">
+                <input type="email" class="inputNewsletter shadow">
+              <button type="submit" class="btn rounded-pill">Subscribe</button>
+              </form>
+              </div>
+            </div>
+          </div>
+         </section>
     </main>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex flex-column gap-4">
+              <div class="address">
+                <h3 class="">
+                  SENESPACE
+                </h3>
+                <p>Dakar<br>Sénégal</p>
+              </div>
+              <div class="number">
+                <p><strong>Phone:</strong>+221 78 796 34 72 / +1 (240) 971-8885</p>
+              <p><strong>Email:</strong>contact@senespace.com</p>
+              </div>
+            </div>
+            <div class="col liens-utiles">
+              <h6><strong>Liens utils</strong><br></h6>
+              <a href="#"><i class="fa-sharp fa-solid fa-chevron-right"></i> Acceuil</a><br>
+              <a href="#"><i class="fa-sharp fa-solid fa-chevron-right"></i> A propos</a><br>
+              <a href="#"><i class="fa-sharp fa-solid fa-chevron-right"></i> Services</a><br>
+              <a href="#"><i class="fa-sharp fa-solid fa-chevron-right"></i> Contact</a>
+            </div>
+            <div class="col nos-services">
+              <h6><strong>Nos Services</strong><br></h6>
+              <a href="#"><i class="fa-sharp fa-solid fa-chevron-right"></i> Maison</a><br>
+              <a href="#"><i class="fa-sharp fa-solid fa-chevron-right"></i> Appartement</a><br>
+              <a href="#"><i class="fa-sharp fa-solid fa-chevron-right"></i> Terrain</a><br>
+              <a href="#"><i class="fa-sharp fa-solid fa-chevron-right"></i> Espaces commerciaux</a>
+            </div>
+            <div class="col">
+              <h6><strong>Réseaux sociaux</strong></h6>
+              <p>Suivez nous sur nos différents réseaux sociaux</p>
+              <div class="social-media">
+                <i class="bi bi-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-skype"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="footer-bande mt-5"> 
+        <div class="container d-flex justify-content-between">
+          <p>© Copyright <strong>SenEspace</strong>. Tous droits réservé</p>
+          <p>Designed by <a href="#">SenEspace</a></p>
+        </div>
+      </div> 
+    </footer>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
