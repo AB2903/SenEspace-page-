@@ -137,29 +137,65 @@ header section .image img {
   }
 }
 
-main section .container {
-  margin-top: 40px;
+main .apropos .container {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
-main section .container .row .col .p {
+main .apropos .container .row #titre {
+  margin-bottom: 30px;
+}
+main .apropos .container .row .col h2 {
+  color: rgba(11, 57, 105, 0.8705882353);
+  font-size: 34px;
+  font-weight: bold;
+}
+main .apropos .container .row .col .p {
   border-bottom: 2px solid #152659;
   width: 45px;
   height: 10px;
   margin: 0 auto;
 }
-main section .container .row .col .p1 {
+main .apropos .container .row .col .p1 {
   border-bottom: 1px solid grey;
   width: 100px;
   margin: 0 auto;
 }
-main section .container .row .col .btn {
+main .apropos .container .row .col .btn {
   border: 2px solid #152659;
   color: #152659;
   padding: 10px;
   width: 150px;
 }
-main section .container .row .col .btn:hover {
+main .apropos .container .row .col .btn:hover {
   color: #fff;
   background-color: #152659;
+}
+main .proposition {
+  background: rgba(150, 153, 164, 0.2);
+}
+main .proposition .row .col .contenu {
+  margin-left: 100px;
+  margin-top: 70px;
+}
+main .proposition .row .col .contenu h6 {
+  color: rgba(4, 71, 143, 0.8705882353);
+  font-size: 34px;
+}
+main .proposition .row .col .contenu p {
+  color: gray;
+}
+main .proposition .row .col .contenu .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: transparent !important;
+  border: none !important;
+}
+main .proposition .row .col .contenu .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none !important;
+}
+main .proposition .row img {
+  width: 550px;
+  height: 430px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

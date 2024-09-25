@@ -232,12 +232,35 @@ header{
     }
 }
 
+@mixin imgs{
+    width: 550px;
+    height: 430px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+@mixin h($theme: #04478fde){
+    color: $theme;
+    font-size: 34px;
+}
+@mixin h2($theme: #0b3969de){
+    color: $theme;
+    font-size: 34px;
+    font-weight: bold;
+}
+
 main{
-    section{
+    .apropos{
         .container{
-            margin-top: 40px;
+            margin-top: 60px;
+            margin-bottom: 60px;
             .row{
+                #titre{
+                    margin-bottom: 30px;
+                }
                 .col{
+                    h2{
+                        @include h2;
+                    }
                     .p{
                         @include p1;
                     }.p1{
@@ -247,6 +270,40 @@ main{
                         @include btn;
                     }
                 }
+            }
+        }
+    }
+
+    .proposition{
+        background: rgb(150, 153, 164, 0.2);
+        .row{
+            .col{
+                .contenu{
+                    margin-left: 100px;
+                    margin-top: 70px;
+                    h6{
+                        @include h;
+                    }
+                    p{
+                        color: gray;
+                    }
+                    .accordion{
+                        .accordion-item{
+                            .accordion-header{
+                                .accordion-button{
+                                    background-color: transparent !important; 
+                                    border: none !important;   
+                                    &:focus{
+                                        box-shadow: none !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            img{
+                @include imgs;
             }
         }
     }
