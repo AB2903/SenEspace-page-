@@ -337,6 +337,9 @@ footer .footer-bande a {
   text-decoration: none;
 }
 
+main .apropos {
+  font-family: "Jost", sans-serif;
+}
 main .apropos .container {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -372,6 +375,7 @@ main .apropos .container .row .col .btn:hover {
 }
 main .proposition {
   background-color: #f3f5fa;
+  font-family: "Jost", sans-serif;
 }
 main .proposition .row .col .contenu {
   margin-left: 100px;

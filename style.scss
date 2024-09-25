@@ -170,6 +170,7 @@ header{
     }
 
     section{
+        
         @include section;
         .div{
             @include pdiv;
@@ -466,6 +467,7 @@ footer{
 
 main{
     .apropos{
+        font-family: $font-family-page;
         .container{
             margin-top: 60px;
             margin-bottom: 60px;
@@ -492,6 +494,7 @@ main{
 
     .proposition{
         background-color: #f3f5fa;
+        font-family: $font-family-page;
         .row{
             .col{
                 .contenu{

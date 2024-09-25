@@ -12,6 +12,7 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
       </style>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 
@@ -41,7 +42,7 @@
         </nav>
         
         <section id="acceuil">
-            <div class="div">
+            <div class="div" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Achat et Vente de Maisons</h1>
                 <h4>Trouvez votre chez-vous idéal, vendez avec facilité! <br>Achetez et vendez des maisons en toute simplicité avec notre application!</h4>
                 <h5>Inscrivez-vous maintenant pour ne rien manquer du lancement de notre application !</h5>
@@ -51,13 +52,14 @@
                     <a href="#">Voir plus</a>
                 </button>
             </div>
-            <div class="image">
+            <div class="image" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="./IMAGES/hero-img.png" alt="">
             </div>
         </section>
     </header>
     <main>
-      <section class="apropos" id="apropos">
+      <section class="apropos" id="apropos" data-aos="fade-up"
+      data-aos-duration="2000">
         <div class="container">
             <div class="row">
                 <div class="col text-center" id="titre">
@@ -79,15 +81,15 @@
             <div class="row">
                 <div class="col">
                     <p >
-                        <i class="fas fa-check-double"></i>
+                        <i class="bi bi-check2-all"></i>
                         Adaptée au marché sénégalais
                     </p>
                     <p>
-                        <i class="fas fa-check-double"></i>
+                        <i class="bi bi-check2-all"></i>
                         Une large gamme d'annonces immobilières
                     </p>
                     <p>
-                        <i class="fas fa-check-double"></i>
+                        <i class="bi bi-check2-all"></i>
                         Fournir des informations détaillées sur la propriété
                     </p>
                 </div>
@@ -95,7 +97,8 @@
         </div>
     </section>
 
-    <section class="proposition">
+    <section class="proposition" data-aos="fade-up"
+    data-aos-duration="2000">
         <div class="row">
             <div class="col">
                 <div class="contenu">
@@ -142,7 +145,8 @@
         </div>
 
         <!-- Section services -->
-        <section id="services">
+        <section id="services" data-aos="fade-up"
+        data-aos-duration="2000">
                 <h1 class="text-center mt-5 mb-5">SERVICES</h1>
                 <div class="tiret">
                   <div class="tiret-gras"></div>
@@ -181,7 +185,7 @@
             <!-- section background-image -->
          <section id="background-img">
           <div class="grandiant-linear">
-            <div class="container d-flex justify-content-between align-items-center gap-5">
+            <div class="container d-flex justify-content-between align-items-center gap-5" data-aos="zoom-in-up" data-aos-duration="1000">
               <div class="w-75">
                 <h2>Voulez vous en savoir plus ?</h2>
                 <p>Si vous souhaitez trouver un space immobilier, oubien exposer, louer ou vendre vos biens immobilier, contactez nous a travers notre formulaire de contact en précisant l'objet. Un de nos agents vous expliquera tous ce que vous devez savoir.</p>
@@ -196,7 +200,8 @@
         
     </section>
         <!-- Section contact -->
-        <section id="contact">
+        <section id="contact" data-aos="fade-up"
+        data-aos-duration="1000">
           <h1 class="text-center mt-5 mb-5">CONTACT</h1>
           <div class="tiret">
             <div class="tiret-gras"></div>
@@ -320,5 +325,9 @@
       </div> 
     </footer>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
