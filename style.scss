@@ -4,10 +4,9 @@ body{
     padding:0;
     box-sizing: border-box;
     font-family: "Jost", sans-serif;
-    overflow-x: hidden;
 }
 header{
-    background: linear-gradient(to right, #A6AEC8,#46588E, #041D65);
+    background: linear-gradient(to right, rgb(166, 174, 200),#46588E, #041D65);
     font-family: $font-family-page;
     @mixin nav($theme: rgba(247, 242, 242, 0.934)){
         position: fixed;
@@ -95,7 +94,6 @@ header{
 
     @mixin pdiv($theme: #fff){
         padding-left: 90px;
-        width: 6    00px;
     }
 
     @mixin h1($theme: #fff){
@@ -103,14 +101,15 @@ header{
         font-size: 60px;
     }
 
-    @mixin h4($theme: #fff){
+    @mixin h4($theme: rgba(255, 255, 255, 0.6)){
         color: $theme;
         font-size: 25px;
     }
 
-    @mixin h5($theme: #fff){
+    @mixin h5($theme: rgba(255, 255, 255, 0.6)){
         color: $theme;
         font-size: 25px;
+        font-weight: 700;
     }
 
     @mixin img($theme: #fff){
@@ -240,14 +239,21 @@ header{
             margin: 0 auto;
         }
     }
-    h4, .bi{
-        color: #37517e;
-        font-weight: 500;
+    .animation-card{
+        transition: transform 1s;
+        h4, .bi{
+            color: #37517e;
+            font-weight: 500;
+        }
+        .bi {
+            font-size: 2em;
+            margin-bottom: -90px;
+        }
     }
-    .bi {
-        font-size: 2em;
-        margin-bottom: -90px;
+    .animation-card:hover{
+        transform: translateY(-20px);
     }
+    
     
 }
 // section background-image
@@ -300,34 +306,45 @@ header{
             margin: 0 auto;
         }
     }
-    .contact-data{
-        font-family: $font-family-page;
-        margin-top: 40px;
-        .c-data{
+    .data-map{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .contact-data{
+            font-family: $font-family-page;
+            margin-top: 35px;
             display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-top: 20px;
-            margin-left: 20px;
-            .bi{
-                width: 50px;
-                height: 50px;
-                border-radius: 50px;
-                background-color: rgb(231, 245, 251);
+            flex-direction: column;
+            gap: 20px;
+            .c-data{
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                font-size: 25px;
-            }
-            p{
-                color: #6182ba;
-                strong{
-                    color: #37517e;
-                    font-size: 20px;
+                gap: 10px;
+                margin-left: 20px;
+                .bi{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                    background-color: rgb(231, 245, 251);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                }
+                p{
+                    color: #6182ba;
+                    strong{
+                        color: #37517e;
+                        font-size: 20px;
+                    }
                 }
             }
         }
+        iframe{
+            margin-left: 20px;
+        }
     }
+    
     .btn{
         background-color: #041d65; 
         height: 48px; 
@@ -373,7 +390,18 @@ header{
     }
     
 }
-
+// Bouton de retour en haut
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #152659;
+    border: none;
+  }
 // footer
 footer{
     font-family: $font-family-page;

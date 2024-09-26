@@ -3,11 +3,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
-  overflow-x: hidden;
 }
 
 header {
-  background: linear-gradient(to right, #A6AEC8, #46588E, #041D65);
+  background: linear-gradient(to right, rgb(166, 174, 200), #46588E, #041D65);
   font-family: "Jost", sans-serif;
 }
 header nav {
@@ -64,19 +63,19 @@ header section {
 }
 header section .div {
   padding-left: 90px;
-  width: 6 0px;
 }
 header section .div h1 {
   color: #fff;
   font-size: 60px;
 }
 header section .div h4 {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 25px;
 }
 header section .div h5 {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 25px;
+  font-weight: 700;
 }
 header section .div .btn {
   border: 1px solid;
@@ -165,13 +164,19 @@ header section .image img {
   border-bottom: 2px solid #37517e;
   margin: 0 auto;
 }
-#services h4, #services .bi {
+#services .animation-card {
+  transition: transform 1s;
+}
+#services .animation-card h4, #services .animation-card .bi {
   color: #37517e;
   font-weight: 500;
 }
-#services .bi {
+#services .animation-card .bi {
   font-size: 2em;
   margin-bottom: -90px;
+}
+#services .animation-card:hover {
+  transform: translateY(-20px);
 }
 
 #background-img {
@@ -220,18 +225,25 @@ header section .image img {
   border-bottom: 2px solid #37517e;
   margin: 0 auto;
 }
-#contact .contact-data {
-  font-family: "Jost", sans-serif;
-  margin-top: 40px;
+#contact .data-map {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-#contact .contact-data .c-data {
+#contact .data-map .contact-data {
+  font-family: "Jost", sans-serif;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#contact .data-map .contact-data .c-data {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 20px;
   margin-left: 20px;
 }
-#contact .contact-data .c-data .bi {
+#contact .data-map .contact-data .c-data .bi {
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -241,12 +253,15 @@ header section .image img {
   align-items: center;
   font-size: 25px;
 }
-#contact .contact-data .c-data p {
+#contact .data-map .contact-data .c-data p {
   color: #6182ba;
 }
-#contact .contact-data .c-data p strong {
+#contact .data-map .contact-data .c-data p strong {
   color: #37517e;
   font-size: 20px;
+}
+#contact .data-map iframe {
+  margin-left: 20px;
 }
 #contact .btn {
   background-color: #041d65;
@@ -289,6 +304,18 @@ header section .image img {
 }
 .newsletter form .btn:hover {
   background-color: #0b42e8;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #152659;
+  border: none;
 }
 
 footer {

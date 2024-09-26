@@ -156,25 +156,25 @@
                 </p>
                 <div class="container text-start mb-5 mt-5">
                     <div class="row gap-4">
-                      <div class="col shadow-lg px-4 py-5  bg-white mb-4">
+                      <div class="col shadow-lg px-4 py-5  bg-white mb-4 animation-card">
                         <i class="bi bi-dribbble"></i>
                         <h4 class="mt-2">Maisons</h4>
                         <p class="mt-4">Explorez une variété de maisons disponibles à la vente ou à la location, avec des détails complets sur leur emplacement, leur taille et leurs commodités pour vous aider à trouver votre chez-vous idéal au Sénégal.
                         </p>
                       </div>
-                      <div class="col shadow-lg px-4 py-5  bg-white mb-4">
+                      <div class="col shadow-lg px-4 py-5  bg-white mb-4 animation-card">
                         <i class="bi bi-file-earmark-text"></i>
                         <h4 class="mt-2">Appartements</h4>
                         <p class="mt-4">Découvrez une sélection d'appartements à vendre ou à louer, avec des descriptions détaillées comprenant des informations sur les services à proximité, les commodités de l'immeuble et bien plus encore, pour vous aider à trouver le lieu de vie parfait au Sénégal.
                         </p>
                       </div>
-                      <div class="col shadow-lg px-4 py-5  bg-white mb-4">
+                      <div class="col shadow-lg px-4 py-5  bg-white mb-4 animation-card">
                         <i class="bi bi-stopwatch"></i>
                         <h4 class="mt-2">Terrains</h4>
                         <p class="mt-4">Parcourez notre liste de terrains à vendre, avec des détails sur la taille, le zonage et les possibilités de développement, pour vous aider à concrétiser vos projets immobiliers au Sénégal en toute transparence.
                         </p>
                       </div>
-                      <div class="col shadow-lg px-4 py-5  bg-white mb-4">
+                      <div class="col shadow-lg px-4 py-5  bg-white mb-4 animation-card">
                         <i class="bi bi-stack"></i>
                         <h4 class="mt-2">Espaces<br> commerciaux</h4>
                         <p class="mt-4">Explorez nos annonces d'espaces commerciaux à louer ou à vendre, avec des informations détaillées sur l'emplacement, la taille et les équipements disponibles, pour vous aider à trouver l'emplacement idéal pour votre entreprise au Sénégal.
@@ -209,7 +209,7 @@
           </div>
           <div class="container mb-5">
             <div class="row gap-4">
-              <div class="col shadow-lg bg-tertiary" style="border-bottom: 3px solid #041d65; border-top: 3px solid #041d65;">
+              <div class="col shadow-lg bg-tertiary data-map" style="border-bottom: 3px solid #041d65; border-top: 3px solid #041d65;">
                 <div class="contact-data">
                   <div class="c-data address">
                     <i class="bi bi-geo-alt"></i>
@@ -230,7 +230,16 @@
                     </p>
                   </div>
                 </div>
-                <div class="map"></div>
+                <div class="map">
+                  <iframe
+                  id="inlineFrameExample"
+                  title="Inline Frame Example"
+                  width="390"
+                  height="290"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+                </iframe>
+
+                </div>
               </div>
               <div class="col-7 shadow-lg px-4 py-5  bg-tertiary" style="border-bottom: 3px solid #041d65; border-top: 3px solid #041d65;">
                 <form class="row g-3">
@@ -274,6 +283,14 @@
             </div>
           </div>
         </section>
+        <!-- Back to top button -->
+        <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+        >
+        <i class="fas fa-arrow-up"></i>
+        </button>
     </main>
     <!--section footer -->
     <footer>
@@ -325,6 +342,7 @@
         </div>
       </div> 
     </footer>
+    <script src="script.js"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
